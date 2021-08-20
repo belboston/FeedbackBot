@@ -30,7 +30,7 @@ Create a Super Group in Telegram, add `@GoogleIMGBot` to the group, and send /id
 
 * `START_COMMAND`: The command to check if the bot is alive, or for users to start the robot.
 
-* `START_OTHER_USERS_TEXT`: Send a Message in your `AUTH_CHANNEL`, and paste message_id in this value.
+* `START_OTHER_USERS_TEXT`: The message that users receive when they start the bot.
 
 * `ONLINE_CHECK_START_TEXT`: The message that the bot administrators can use to check if bot is online.
 

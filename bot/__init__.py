@@ -32,11 +32,11 @@ APP_ID = get_config("APP_ID", should_prompt=True)
 TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
 # array to store the channel ID who are authorized to use the bot
 AUTH_CHANNEL = int(get_config(
-        "AUTH_CHANNEL",
-        "-100",
-        should_prompt=True
-    )
-)
+    "AUTH_CHANNEL",
+    "-100",
+    should_prompt=True
+))
+
 # sqlalchemy Database for the bot to operate
 DB_URI = get_config(
     "DATABASE_URL",
@@ -60,13 +60,13 @@ UN_BAN_COMMAND = get_config("UN_BAN_COMMAND", "unban")
 START_COMMAND = get_config("START_COMMAND", "start")
 # default message in-case of None types
 DEFAULT_START_TEXT = (
-    "Hello! This is a feedback bot. Send you message to contact the admin(s)."    
+    "Hello! This is a feedback bot. Send you message to contact the admin(s)."
 )
 # /start message when other users start your bot
-START_OTHER_USERS_TEXT = int(get_config(
+START_OTHER_USERS_TEXT = get_config(
     "START_OTHER_USERS_TEXT",
-    0
-))
+    ""
+)
 # check online status of your bot
 ONLINE_CHECK_START_TEXT = get_config(
     "ONLINE_CHECK_START_TEXT",
@@ -80,7 +80,7 @@ ONLINE_CHECK_START_TEXT = get_config(
 DELETED_MESSAGES_NOTIFICATION_TEXT = get_config(
     "DELETED_MESSAGES_NOTIFICATION_TEXT",
     (
-        "This message has been deleted."        
+        "This message has been deleted."
     )
 )
 # IDEKWBYRW
